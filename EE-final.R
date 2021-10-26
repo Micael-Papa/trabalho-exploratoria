@@ -520,6 +520,7 @@ Negra=dados_raca_baixo_peso%>%
 summary(Negra$PESO2)
 
 Negra_Branca= rbind(Negra,Branca)
+
 # Boxplot para baixo peso ao nascer segundo raça/cor com as categorias Branca e Negra
 
 ggplot(dados_raca_baixo_peso) +
@@ -530,14 +531,6 @@ ggplot(dados_raca_baixo_peso) +
   theme()
 
 table(dados_raca_baixo_peso$RACACOR2)  
-
-
-ggplot(Negra_Branca)+
-  aes(x=factor(RACACOR2), y=PESO2) +
-  geom_boxplot(fill=c("#66CC99"), width = 0.7) +
-  guides(fill=FALSE) +
-  labs(x="Raça/cor", y="Peso ao nascer (em g)")+
-  theme()
 
 
 
