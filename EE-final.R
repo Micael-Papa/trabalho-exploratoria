@@ -1,6 +1,8 @@
 setwd("d:/Arquivos/Desktop/graduacao-estatistica-unb/estatistica-exploratoria/trabalho")
 dir()
 #install.packages("read.dbc")
+# um comentario de teste
+
 require(tidyverse)
 require('read.dbc')
 A1=read.dbc("DNAC2017.dbc")
